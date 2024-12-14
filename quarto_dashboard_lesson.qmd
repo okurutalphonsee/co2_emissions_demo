@@ -1,0 +1,108 @@
+
+---
+title: "Gapminder 2007"
+format: dashboard
+theme: superhero
+---
+
+```{python}
+import plotly.express as px
+
+p = px.line(y=[1, 2, 3])
+```
+
+# Layouts
+
+## Row1 {height="30%"}
+
+### Column1 {width="20%"}
+
+```{python}
+p
+```
+
+### Column2 {width="80%"}
+
+```{python}
+p
+```
+
+## Row2 {height="70%"}
+
+```{python}
+p
+```
+
+# Tabsets
+
+## Row1 {height="30%"}
+
+### Column1 {.tabset  width="30%"}
+
+#### tabset1
+
+```{python}
+p
+```
+
+
+Hello World
+
+#### tabset2
+
+```{python}
+p
+```
+
+Nice Tutorials
+
+### Column2 {width="70%"}
+
+```{python}
+p
+```
+
+
+## Row2 {.tabset  height="70%"}
+
+### Tab1
+```{python}
+p
+```
+
+### Tab2
+
+Hello Universe
+
+```{python}
+tips = px.data.tips()
+num_cols = tips.shape[1]
+num_rows = tips.shape[0]
+```
+
+# Value Boxes
+
+## Row1 {height="20%"}
+
+::: {.valuebox  title = "Number of Rows"  color="primary"  icon="heart"}
+`{python} num_rows`
+
+few rows
+:::
+
+::: {.valuebox  title = "Number of Columns" color="secondary" icon="arrow-down"}
+`{python} num_cols`
+
+many columns
+:::
+
+::: {.valuebox  title = "Medium Number" color="#5ba3b6"  icon="bar-chart"}
+3
+:::
+
+## Row2 {height="80%"}
+
+
+```{python}
+p
+```
